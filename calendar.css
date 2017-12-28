@@ -1,0 +1,60 @@
+body{
+	font-family:"Microsoft Yahei";
+}
+select{
+	width:60px;
+	border:2px solid #CCC;
+	margin: 5px;
+}
+select:nth-child(n+2){
+	width:40px;
+}
+p{
+	text-align: center;
+}
+.date{
+	display:block;
+	margin: 10px auto;
+	width:320px;
+	height:30px;
+	line-height:30px;
+	font-size:20px;
+	border:2px solid #CCC;
+	border-radius:7px;
+	text-indent:5px;
+	transition:all .5s ease;
+}
+.cell{
+	border-radius:3px;
+	color:#BBB;
+	cursor:pointer;
+}
+.used{
+	background-color:#CCC;
+	color:#555;
+}
+.active{
+	background: #306DAB;
+	color:#BBB;
+}
+.cell:hover{
+	background-color:#777;
+	color:#CCC;
+}
+.date:focus{
+	box-shadow:0 0 10px #CCC;
+	outline:none;
+}
+.calendar{
+	width:300px;
+	text-align:center;
+	margin: 0 auto;
+	border-radius:10px;
+	padding:10px;
+	background-color:#EEE;
+	border:1px solid #CCC;
+}
+.calendar table{
+	margin:0 auto;
+	width:300px;
+}

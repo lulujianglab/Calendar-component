@@ -1,1 +1,23 @@
 
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>日历组件</title>
+	<link rel="stylesheet" href="calendar.css">
+</head>
+<body>
+	<input type="text" class="date" data-calendar/>
+	<p>下拉，日期界面均可选择日期</p>
+	<script src="calendar.js"></script>
+	<script>
+		var options = {
+		    'calendarClass': 'calendar',
+		    'inputClass': 'input',
+		    'cellClass': 'cell',
+		    'usedClass': 'used',
+		}
+		new Calendar(options);
+	</script>
+</body>
+</html>
