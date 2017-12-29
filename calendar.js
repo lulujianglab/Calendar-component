@@ -25,7 +25,7 @@ Calendar.prototype = {
         this.initEvent()
     },
 
-    // 创建日历表格，初始化日历元素年月日下拉框DOM
+    // 创建日历表格，初始化日历选择下拉框DOM
     initDom: function() {
         // 创建日历元素
         var calendar = document.createElement('div')
@@ -198,8 +198,9 @@ Calendar.prototype = {
                     document.querySelector('#month').appendChild(option)
                 }
 
-                // 特殊日
+                // 特殊日 也可以用var dayLength = self.getMonthLength()得出当月天数
                 var dayLength = document.getElementsByClassName('used').length + 1
+                //console.log(dayLength)
                 document.querySelector('#day').innerHTML = ''
                 for (var i = nowday; i < dayLength; i++) {
                     var option = document.createElement('option')
